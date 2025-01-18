@@ -33,6 +33,7 @@ main section p {
     color: white;
     text-align: center;
     padding: 6rem 5%;
+    margin-bottom: 65px;
 }
 
 .about-hero h1 {
