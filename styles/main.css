@@ -40,6 +40,7 @@ body {
 }
 
 .navbar {
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,23 +71,34 @@ body {
     height: 3px;
     margin: 5px auto;
     background-color: #333;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     list-style: none;
 }
 
-.nav-links a {
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav-menu a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
 
 }
 
-.nav-links a:hover {
+.nav-menu a:hover {
     color: var(--primary-color);
 }
 
