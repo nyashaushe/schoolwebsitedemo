@@ -68,54 +68,45 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Mobile Navigation Styles */
 @media screen and (max-width: 768px) {
+    .nav-container {
+        position: relative;
+    }
+
     .hamburger {
         display: block;
     }
 
     .nav-links {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Start off-screen */
+        height: 100vh;
+        width: 250px;
         background: white;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 60px 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
     }
 
     .nav-links.active {
         display: flex;
+        flex-direction: column;
+        left: 0;
     }
 
     .nav-links li {
-        margin: 16px 0;
+        margin: 10px 0;
+    }
+
+    .enroll-now {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-
-}
-
-.enroll-now {
-    background: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .hero {
     background: linear-gradient(rgba(45, 123, 212, 0.8), rgba(74, 144, 226, 0.8)), url('/images/hero.jpg');
     background-size: cover;

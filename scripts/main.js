@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+        navLinks.classList.remove('active');
+    }
+});
+
 document.querySelector('.hamburger').addEventListener('click', function() {
     this.classList.toggle('active');
     document.querySelector('.nav-links').classList.toggle('active');
