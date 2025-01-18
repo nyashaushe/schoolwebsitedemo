@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions - School Website</title>
+    <title>Admissions - Evergreen Academy</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/admissions.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <script scr ="../scripts/main.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
     <script src="../scripts/navigation.js" defer></script>
 </head>
 <body>
@@ -24,9 +25,9 @@
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="academics.html">Academics</a></li>
-                <li><a href="admissions.html">Admission</a></li>
+                <li><a href="admissions.html" class="active">Admission</a></li>
                 <li><a href="events.html">Events & News</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -36,78 +37,80 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="admissions-hero">
             <h1>Admissions</h1>
             <p>Join our community of learners and begin your journey towards excellence.</p>
         </section>
 
-        <section class="application-process">
-            <h2>Application Process</h2>
-            <p>Follow these steps to begin your journey with us:</p>
-            <ul>
-                <li>1. Submit Application</li>
-                <li>2. Document Review</li>
-                <li>3. Interview</li>
-            </ul>
-        </section>
+        <section class="admissions-content">
+            <div>
+                <h2>Application Process</h2>
+                <p>Follow these steps to begin your journey with us:</p>
+                <ul>
+                    <li>1. Submit Application</li>
+                    <li>2. Document Review</li>
+                    <li>3. Interview</li>
+                </ul>
+            </div>
 
-        <section class="application-form">
-            <h2>Apply Now</h2>
-            <form>
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" placeholder="Enter your full name" required>
+            <div>
+                <h2>Apply Now</h2>
+                <form>
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
 
-                <label for="grade">Grade Applying For</label>
-                <select id="grade" required>
-                    <option value="">Select grade</option>
-                    <option value="grade1">Grade 1</option>
-                    <option value="grade2">Grade 2</option>
-                    <option value="grade3">Grade 3</option>
-                </select>
+                    <label for="grade">Grade Applying For</label>
+                    <select id="grade" required>
+                        <option value="">Select grade</option>
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                    </select>
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
 
-                <button type="submit">Submit Application</button>
-            </form>
+                    <button type="submit">Submit Application</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Evergreen Academy</p>
-            <p>1234 Elm Street</p>
-            <p>Hometown, ST 12345</p>
-            <p>Email: info@evergreenacademy.edu</p>
-            <p>Phone: (123) 456-7890</p>
+                <h3>Contact Us</h3>
+                <p>Evergreen Academy</p>
+                <p>1234 Elm Street</p>
+                <p>Hometown, ST 12345</p>
+                <p>Email: info@evergreenacademy.edu</p>
+                <p>Phone: (123) 456-7890</p>
             </div>
             <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/academics.html">Academics</a></li>
-                <li><a href="pages/admissions.html">Admission</a></li>
-                <li><a href="pages/events.html">Events & News</a></li>
-                <li><a href="pages/gallery.html">Gallery</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admission</a></li>
+                    <li><a href="events.html">Events & News</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
             <div class="footer-section">
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-            </ul>
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                </ul>
             </div>
         </div>
-        </footer>
+    </footer>
 </body>
 </html>

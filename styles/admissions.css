@@ -1,0 +1,82 @@
+/* Admissions Page Specific Styles */
+.admissions-hero {
+    background: linear-gradient(rgba(45, 123, 212, 0.8), rgba(74, 144, 226, 0.8)), url('../images/admissions-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 5%;
+}
+
+.admissions-hero h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.admissions-content {
+    background: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+}
+
+.admissions-content h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 3rem 0 1.5rem;
+}
+
+.admissions-content p, .admissions-content ul, .admissions-content form {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.admissions-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.admissions-content form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.admissions-content form input, .admissions-content form select, .admissions-content form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admissions-content form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admissions-content form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .admissions-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .admissions-content {
+        padding: 2rem;
+        margin-top: -30px;
+    }
+}

@@ -1,0 +1,74 @@
+/* About Page Specific Styles */
+main section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 5%;
+}
+
+main section h1 {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+main section h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin: 3rem 0 1.5rem;
+}
+
+main section p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Section for About Page */
+.about-hero {
+    background: linear-gradient(rgba(45, 123, 212, 0.8), rgba(74, 144, 226, 0.8)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 5%;
+}
+
+.about-hero h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content {
+    background: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Responsive Styles for about page*/
+@media screen and (max-width: 768px) {
+    main section h1 {
+        font-size: 2.5rem;
+    }
+
+    main section h2 {
+        font-size: 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-content {
+        padding: 2rem;
+        margin-top: -30px;
+    }
+}
