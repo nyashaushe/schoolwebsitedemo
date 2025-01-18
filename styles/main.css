@@ -54,6 +54,11 @@ body {
     gap: 1rem;
 }
 
+.logo img {
+   width: 50px; 
+   height: auto;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
