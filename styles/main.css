@@ -88,7 +88,7 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: solid;
     color: var(--text-color);
 }
 .nav-menu a {
