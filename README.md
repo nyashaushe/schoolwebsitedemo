@@ -1,43 +1,49 @@
-# School Website
+# Evergreen Academy Website
 
-This project is a simple school website built using HTML, CSS, and JavaScript. It serves as an informational platform for the Evergreen Academy, showcasing various aspects of the institution.
+A modern school website built using React.js, showcasing various aspects of the Evergreen Academy institution.
 
 ## Project Structure
 
 ```
-school-website
-├── index.html
-├── styles
-│   ├── main.css
-│   └── responsive.css
-├── scripts
-│   ├── main.js
-│   └── navigation.js
-├── images
-│   
-├── pages
-│   ├── about.html
-│   ├── academics.html
-│   ├── admissions.html
-│   ├── contact.html
-│   ├── events.html
-│   └── gallery.html
+evergreen-academy
+├── public/
+│   ├── images/
+│   │   └── mortarboard.png
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.css
+│   │   ├── Footer/
+│   │   │   ├── Footer.jsx
+│   │   │   └── Footer.css
+│   │   └── Navigation/
+│   │       ├── Navigation.jsx
+│   │       └── Navigation.css
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── About/
+│   │   ├── Academics/
+│   │   ├── Admissions/
+│   │   ├── Events/
+│   │   ├── Gallery/
+│   │   └── Contact/
+│   ├── styles/
+│   │   ├── main.css
+│   │   └── responsive.css
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── Routes.jsx
+├── package.json
 └── README.md
 ```
 
 ## Features
 
-- **Responsive Design**: The website is designed to be fully responsive, ensuring a seamless experience on both desktop and mobile devices.
-- **Navigation**: Smooth scrolling and mobile-friendly navigation for easy access to different sections of the website.
-- **Dynamic Content**: JavaScript is used to handle form submissions and other interactive elements.
+- **Modern React.js Architecture**: Built using React.js with component-based architecture
+- **Responsive Design**: Fully responsive website that works seamlessly across all devices
+- **React Router**: Smooth client-side routing between different pages
+- **Component Reusability**: Modular components for consistent design and easier maintenance
+- **CSS Modules**: Scoped styling for components to prevent style conflicts
 
-## Setup Instructions
-
-1. Clone the repository to your local machine.
-2. Open `index.html` in your web browser to view the website.
-3. Modify the CSS files in the `styles` directory to customize the appearance.
-4. Update the JavaScript files in the `scripts` directory to add or modify functionalities.
-
-## License
-
-This project is open-source and available under the MIT License.
+#

@@ -49,3 +49,128 @@
         margin-top: -30px;
     }
 }
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.program-item {
+    background: var(--light-bg-color, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.program-item h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.program-features {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.program-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.program-features li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.special-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.special-program-item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg-color, #f8f9fa);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.special-program-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.support-services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.support-services ul li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.support-services ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.calendar-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.calendar-item {
+    background: var(--light-bg-color, #f8f9fa);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.calendar-item .date {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.calendar-item .event {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+/* Additional responsive styles */
+@media screen and (max-width: 768px) {
+    .programs-grid,
+    .special-programs-grid,
+    .calendar-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .program-item,
+    .special-program-item,
+    .calendar-item {
+        padding: 1.5rem;
+    }
+}
